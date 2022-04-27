@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+}
+#general{
+    margin: auto;
+    margin-top: 10px;
+    width: 960px;
+    height: 800px;
+    border: 1px black solid;
+    background-color: rgb(233, 227, 227);
+}
+#content{
+    margin: auto;
+    width: 900px;
+    height: 800px;
+    background-color: rgb(233, 227, 227);
+}
+article{
+    width:900px;
+    height: 5   0px;
+    background-color:(233,227,227);
+}
+label{
+    margin-left: 50px;
+}
+.first{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+#send{
+    width: 75px;
+    height: 25px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+input{
+    border: 1px black solid;
+}
+#changethis{
+    text-align: center;
+}

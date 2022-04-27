@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Formulario</title>
+    
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script>
+        $(document).ready(function(){
+          $(body).hide().fadeIn(1250);
+        })
+        </script>
+
+        <link rel="shortcut icon" href="./MUL/favicon.ico"> 
+        <link rel="stylesheet" href="estilos.css">
+
+
+
+        <script>
+
+        function ConfForm(){
+
+            if(document.getElementById("Date").value < 18){
+
+                alert("Debes ser mayor para completar el formulario");
+
+            }
+            else if(document.getElementById("password").value != document.getElementById("conpassword").value){
+
+                alert("Las contraseñas no son iguales");
+            }
+            else if(document.getElementById("Date").value >= 18 && document.getElementById("password").value == document.getElementById("conpassword").value){
+
+               document.getElementById("changethis").innerHTML = '<a href="FormularioC.html" align="center">Click aqui</a>' 
+               document.getElementById("send").setAttribute("disabled","");
+             }
+            
+              }
+             
+        </script>
+
+    </head>
+
+    <body id ="body">
+
+        <div id="general">
+            <div id="content">
+
+
+
+                <h1 align="center"><u><i>Formulario</i></u></h1>    
+                
+
+
+         <form name="data" id="Formulario" method="GET">
+            
+
+                <article class="first">
+             <label>Nombre</label>
+             <input type="text" placeholder=" ..." id="name" name="nombre" required> 
+             <label>Apellido</label>
+             <input type="text" placeholder=" ..." id="Grand_NAME" name="apellido" required>
+            </article>
+
+            <hr>
+
+            <article class="first">
+                <label>Edad</label>
+                <input type="number" name="Fecha_Nacimiento" id="Date" min="18" max="50">
+            </article>
+             
+           <hr>
+
+            <article class="first">
+                <label>Email</label>
+                <input type="email" placeholder=" ..." name="Email" id="Mail">
+                <label>Username</label>
+                <input type="text" placeholder=" ..." name="UserName" id="User">
+            </article>
+
+            <hr>
+
+            <article class="first">
+                <label>Password</label>
+                <input type="password" placeholder=" ..." id="password" name="contraseña">
+                <label>Confimar Contraseña</label>
+                <input type="password" placeholder=" ..." id="conpassword" name="Contraseñac">
+            </article>
+
+            <input type="button" id="send" value="send" onclick="ConfForm()">
+        </form>
+
+        <div name="Hyperlinkreplace" id="changethis"></div>
+
+
+            </div>
+        </div>
+   
+    </body>
+</html>
